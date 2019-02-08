@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ListTableViewCell" rowHeight="134" id="KGk-i7-Jjw" customClass="ListTableViewCell" customModule="SingaporeYelp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="358" height="134"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="358" height="133.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="noimage" translatesAutoresizingMaskIntoConstraints="NO" id="hSn-xg-ZIS">
+                        <rect key="frame" x="11" y="7" width="117" height="118"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3zv-Bt-Bgy">
+                        <rect key="frame" x="140" y="24" width="66" height="31"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="66" id="HDQ-9Y-wUw"/>
+                            <constraint firstAttribute="height" constant="31" id="dwB-pi-Y8x"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hys-01-Bzr">
+                        <rect key="frame" x="252" y="79" width="90" height="31"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="90" id="yVr-Xi-OEc"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Jf-RT-TI5">
+                        <rect key="frame" x="136" y="79" width="82" height="31"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="82" id="k2O-Ph-m02"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Name" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="KZq-0c-4fK">
+                        <rect key="frame" x="205" y="15" width="137" height="58"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                </subviews>
+                <color key="backgroundColor" red="0.90346966429999997" green="0.96681306730000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="Hys-01-Bzr" firstAttribute="top" secondItem="KZq-0c-4fK" secondAttribute="bottom" constant="6" id="8B2-AF-j4P"/>
+                    <constraint firstItem="hSn-xg-ZIS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-4" id="Izk-xE-NYj"/>
+                    <constraint firstItem="8Jf-RT-TI5" firstAttribute="top" secondItem="3zv-Bt-Bgy" secondAttribute="bottom" constant="24" id="Nf9-Ig-lxN"/>
+                    <constraint firstItem="3zv-Bt-Bgy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="13" id="PbO-aX-DAS"/>
+                    <constraint firstItem="Hys-01-Bzr" firstAttribute="leading" secondItem="8Jf-RT-TI5" secondAttribute="trailing" constant="34" id="T5G-6s-DJC"/>
+                    <constraint firstItem="8Jf-RT-TI5" firstAttribute="firstBaseline" secondItem="Hys-01-Bzr" secondAttribute="firstBaseline" id="Txc-9P-CgX"/>
+                    <constraint firstItem="KZq-0c-4fK" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="XkY-My-yOv"/>
+                    <constraint firstItem="KZq-0c-4fK" firstAttribute="trailing" secondItem="Hys-01-Bzr" secondAttribute="trailing" id="e4d-43-dHm"/>
+                    <constraint firstItem="3zv-Bt-Bgy" firstAttribute="leading" secondItem="8Jf-RT-TI5" secondAttribute="leading" constant="4" id="jD8-MH-ttE"/>
+                    <constraint firstItem="hSn-xg-ZIS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-5" id="nBg-GW-g9r"/>
+                    <constraint firstItem="KZq-0c-4fK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="4" id="nbZ-QZ-1zd"/>
+                    <constraint firstItem="KZq-0c-4fK" firstAttribute="leading" secondItem="hSn-xg-ZIS" secondAttribute="trailing" constant="77" id="pPk-Xd-xsp"/>
+                    <constraint firstItem="hSn-xg-ZIS" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="reS-ij-GmN"/>
+                    <constraint firstItem="3zv-Bt-Bgy" firstAttribute="leading" secondItem="hSn-xg-ZIS" secondAttribute="trailing" constant="12" id="ujR-IU-glB"/>
+                    <constraint firstItem="8Jf-RT-TI5" firstAttribute="baseline" secondItem="Hys-01-Bzr" secondAttribute="baseline" id="vnD-MR-TrD"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="8Jf-RT-TI5" secondAttribute="bottom" constant="13" id="y2c-sH-gGf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imagView" destination="hSn-xg-ZIS" id="TGY-OR-rx0"/>
+                <outlet property="nameTextView" destination="KZq-0c-4fK" id="N94-Ea-RCv"/>
+                <outlet property="ratingLabel" destination="Hys-01-Bzr" id="603-HI-x1k"/>
+            </connections>
+            <point key="canvasLocation" x="-265.60000000000002" y="159.22038980509745"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="noimage" width="225" height="225"/>
+    </resources>
+</document>

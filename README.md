@@ -1,1 +1,1 @@
-# Project-for-coursera
+# Project-for-coursera iOS App Development with Swift
